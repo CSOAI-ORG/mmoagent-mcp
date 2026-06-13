@@ -1,0 +1,49 @@
+{
+  "name": "@csoai-org/mmoagent-mcp",
+  "version": "1.0.0",
+  "description": "MEOK GAMING — Cross-Game MMO Intelligence MCP. Unified market data for WoW, FFXIV, EVE Online, OSRS, PoE, Diablo IV. The AI agent for the $200B gaming economy. Part of the MEOK/CSOAI gaming mesh.",
+  "homepage": "https://github.com/CSOAI-ORG/mmoagent-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "mmo",
+    "gaming",
+    "cross-game",
+    "market-intelligence",
+    "world-of-warcraft",
+    "ffxiv",
+    "eve-online",
+    "osrs",
+    "path-of-exile",
+    "diablo",
+    "meok-ai-labs",
+    "csoai"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mmoagent-mcp": "dist/index.js"
+  },
+  "files": ["dist/", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.0"
+  },
+  "engines": { "node": ">=18" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/mmoagent-mcp.git"
+  },
+  "author": "MEOK AI Labs <gaming@meok.ai>"
+}

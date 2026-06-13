@@ -1,0 +1,32 @@
+{
+  "name": "mmoagent-mcp",
+  "description": "MEOK GAMING — Cross-Game MMO Intelligence MCP. Unified market data, economy dashboard, currency conversion, portfolio aggregation, meta trend analysis, intelligent farming suggestions across 6 MMOs (WoW, FFXIV, EVE, OSRS, PoE, Diablo IV). 6 tools, COAI-certified. SOV3 sovereign data export. Part of the MEOK/CSOAI 28-hive gaming mesh.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/CSOAI-ORG/mmoagent-mcp",
+  "license": "MIT",
+  "author": "MEOK AI Labs <gaming@meok.ai>",
+  "type": "mcp",
+  "runtime": "node",
+  "transport": "stdio",
+  "entry": "dist/index.js",
+  "package": "@csoai-org/mmoagent-mcp",
+  "tools": 6,
+  "games": ["wow", "ffxiv", "eve", "osrs", "poe", "diablo"],
+  "coai_gates": ["INTELLIGENCE_ONLY", "NO_AUTOMATION", "AUDIT_TRAIL", "ETHICAL_CHECK", "PLAYER_CONTROL", "RMT_MONITORING"],
+  "sov3": {
+    "enabled": true,
+    "attestation_endpoint": "https://meok-attestation-api.vercel.app/sign",
+    "data_export": "player_owned"
+  },
+  "tags": ["mcp", "mmo", "cross-game", "wow", "ffxiv", "eve", "osrs", "poe", "diablo", "gaming", "market-intelligence", "meok-ai-labs", "csoai", "coai-certified"],
+  "endpoints": {
+    "smithery": "https://smithery.ai/server/@csoai-org/mmoagent-mcp",
+    "npm": "https://www.npmjs.com/package/@csoai-org/mmoagent-mcp",
+    "github": "https://github.com/CSOAI-ORG/mmoagent-mcp"
+  },
+  "hive": {
+    "name": "meok-gaming-hive",
+    "role": "cross-game-intelligence",
+    "mesh": "MEOK-28-hive"
+  }
+}

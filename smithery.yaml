@@ -1,0 +1,35 @@
+name: mmoagent-mcp
+description: MEOK GAMING — Cross-Game MMO Intelligence MCP. Unified market data, economy dashboard, currency conversion, portfolio aggregation, meta trend analysis, intelligent farming suggestions across 6 MMOs (WoW, FFXIV, EVE, OSRS, PoE, Diablo IV). 6 tools, COAI-certified, SOV3 sovereign data. Part of the MEOK/CSOAI 28-hive gaming mesh.
+author: MEOK AI Labs <gaming@meok.ai>
+homepage: https://github.com/CSOAI-ORG/mmoagent-mcp
+license: MIT
+keywords:
+  - mcp
+  - mmo
+  - cross-game
+  - wow
+  - ffxiv
+  - eve
+  - osrs
+  - poe
+  - diablo
+  - gaming
+  - market-intelligence
+  - meok-ai-labs
+  - csoai
+  - coai-certified
+runtime: typescript
+entry: dist/index.js
+config:
+  type: object
+  properties: {}
+  required: []
+startCommand:
+  type: stdio
+  configSchema: ./configSchema.json
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.js'],
+      env: {}
+    })
